@@ -1,0 +1,264 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white ;
+}
+
+
+.formContainer {
+  background-color:#ced4da4f;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 500px;
+  height: 600px;
+}
+
+.mb3 {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  display: block;
+  margin-bottom: 1.5 rem; /* Increase this value to add more space between input boxes */
+  font-weight: bold;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.btnSuccess {
+  background-color: #28a745;
+  color: white;
+  border: none;
+}
+
+.btnSuccess:hover {
+  background-color: #218838;
+}
+
+.btnDefaultBorder {
+  background-color: white;
+  color: #6c757d;
+  border: 1px solid #6c757d;
+}
+
+
+
+.successMessage {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.okButton {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.custom-modal .modal-content {
+  background-color:aliceblue;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: slide-down 0.3s ease-out;
+}
+
+.custom-modal .success-message {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  
+}
+
+.custom-modal .ok-button {
+  background-color:gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.error {
+color: red;
+margin-top: 5px;
+display: block;
+
+
+}
+.inputGroup {
+  margin-bottom: 2rem; /* Adjust spacing */
+}
+
+.inputGroup Label {
+  flex: 0 0 120px; /* Fixed width for the label */
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px; /* Space between label and input */
+}
+@keyframes slide-down {
+  from {
+    transform: translateY(-20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+/* Button container styling */
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: center; /* Vertically centers the buttons */
+  justify-content: center; /* Horizontally centers the buttons */
+  margin-top: 1.5rem;
+}
+
+/* Shared button styles */
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Sign In button styling */
+.btnSignIn {
+  background-color: #0078d4;
+}
+
+/* Submit button styling */
+.btnSubmit {
+  background-color: #0078d4;
+
+}
+
+
+
+/* Custom modal styling */
+.customModal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a background overlay */
+  z-index: 1000;
+}
+
+/* Modal content styling */
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Label inside the modal */
+.modalLabel {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Button inside the modal */
+.btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 768px) {
+  .modalContent {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .modalLabel {
+    font-size: 20px;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .btnContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 300px; /* Limit the button width on smaller screens */
+    font-size: 14px; /* Adjust font size */
+  }
+}
+
+
+
+
+
+
+.redborder {
+border: 1px solid red;
+}

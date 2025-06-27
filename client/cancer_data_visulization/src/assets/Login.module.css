@@ -1,0 +1,200 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  padding: 1rem;
+}
+
+.formContainer {
+  background-color: #ced4da4f;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: black;
+  align-items: center;
+  align-content: center;
+  margin-left: 25px;
+}
+
+.mb3 {
+  margin-bottom: 1.5rem;
+}
+
+.inputGroup {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.inputError {
+  border-color: red !important;
+}
+
+.messageBar {
+  margin-bottom: 1rem;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  margin: 0 0.5rem;
+}
+
+.btnSuccess {
+  color: white;
+  border: none;
+  background-color: #0078d4;
+}
+
+.btnSuccess:hover {
+  background-color: #005ea2;
+}
+
+.forgotPassword {
+  text-align: center;
+  margin-top: 1rem;
+  
+}
+
+.forgotPassword a {
+  color: black;
+  text-decoration: none;
+}
+
+.forgotPassword a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .inputGroup input {
+    padding: 0.6rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+  }
+
+  .forgotPassword {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .formContainer {
+    padding: 1rem;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+  }
+
+  
+}
+
+
+.inputGroup Label {
+  flex: 0 0 120px; /* Fixed width for the label */
+  text-align: left;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px; /* Space between label and input */
+}
+
+/* Specific button styles */
+.registerBtn {
+  /* margin-left: 20px; */
+  background-color:#0078d4 ;
+
+}
+
+.signInBtn {
+  margin-left: 20px;
+  background-color:#0078d4 ;
+}
+/* Styling for forgot username or password link */
+.forgotPassword {
+  color: black;
+ 
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .forgotPassword {
+    margin-left: 0; /* Remove left margin for smaller screens */
+    text-align: center;
+    display: block;
+    font-size: 14px; /* Smaller font size for mobile devices */
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .registerBtn {
+    margin-left: 0;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .signInBtn {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}
+
